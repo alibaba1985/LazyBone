@@ -25,6 +25,7 @@ class LBTabBarController: UITabBarController {
             "我的学员",
             "个人信息"
         ]
+        
         let colors = [
             UIColor(hexString: "#FF518B")!,
             UIColor(hexString: "#40D7FF")!,

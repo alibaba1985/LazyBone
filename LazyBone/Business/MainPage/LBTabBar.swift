@@ -67,7 +67,7 @@ class LBTabBar: UIView {
 	func buttonPressed(sender: LBTabBarItem) {
 		selectedIndex = sender.tag
 		updateUI()
-        didSelected(self)
+		didSelected(self)
 	}
 	
 	func updateUI() {
@@ -104,6 +104,8 @@ extension Int {
 class LBTabBarItem: UIButton {
 	var title: String
 	var color: UIColor
+	var selectedView: UIView!
+	var normalView: UIView!
 	init(title: String, color: UIColor) {
 		self.title = title
 		self.color = color
@@ -113,15 +115,32 @@ class LBTabBarItem: UIButton {
 	
 	override var isSelected: Bool {
 		didSet {
-			if isSelected {
-				backgroundColor = color
-			} else {
-				backgroundColor = UIColor.clear
-			}
+            selectedView.isHidden = isSelected
+            normalView.isHidden = !isSelected
 		}
 	}
+    
 	
 	func setup() {
+		selectedView = UIView()
+		selectedView.backgroundColor = color
+        selectedView.layer.cornerRadius = 6.displayFrom1Scale()
+        insertSubview(selectedView, at: 0)
+        normalView = UIView()
+        normalView.backgroundColor = color
+        normalView.layer.cornerRadius = 6.displayFrom1Scale()
+        insertSubview(normalView, at: 0)
+        
+        selectedView.snp.makeConstraints { (make) in
+            make.top.leading.trailing.equalTo(self)
+            make.height.equalTo(5.45.displayFrom1Scale())
+        }
+        
+        normalView.snp.makeConstraints { (make) in
+            make.edges.equalTo(self)
+        }
+        
+        
 		setTitle(title, for: .normal)
 		setTitleColor(UIColor.white, for: .selected)
 		setTitleColor(color, for: .normal)
