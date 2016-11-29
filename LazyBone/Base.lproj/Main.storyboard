@@ -40,6 +40,37 @@
             </objects>
             <point key="canvasLocation" x="-282" y="152"/>
         </scene>
+        <!--3-->
+        <scene sceneID="Eli-aP-AXM">
+            <objects>
+                <viewController id="vBd-FF-V8g" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pMR-Z7-yY7"/>
+                        <viewControllerLayoutGuide type="bottom" id="bTO-K7-7pW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TGU-Ts-O0J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ode-yK-DPX">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36475578779734175" green="0.099527837021035848" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ode-yK-DPX" firstAttribute="centerY" secondItem="TGU-Ts-O0J" secondAttribute="centerY" id="f2N-Js-Vzd"/>
+                            <constraint firstItem="ode-yK-DPX" firstAttribute="centerX" secondItem="TGU-Ts-O0J" secondAttribute="centerX" id="h1A-RZ-MlJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="3" id="cUV-vg-o1F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ipy-OR-VOO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-282" y="849"/>
+        </scene>
         <!--Item 1-->
         <scene sceneID="o38-xX-9wz">
             <objects>
@@ -71,6 +102,7 @@
                     <connections>
                         <segue destination="1pm-S8-kdJ" kind="relationship" relationship="viewControllers" id="58p-2V-OQd"/>
                         <segue destination="4JW-O9-peV" kind="relationship" relationship="viewControllers" id="nxs-mW-35z"/>
+                        <segue destination="vBd-FF-V8g" kind="relationship" relationship="viewControllers" id="SbD-e4-dmD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vle-TT-x2f" userLabel="First Responder" sceneMemberID="firstResponder"/>

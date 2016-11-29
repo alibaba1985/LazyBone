@@ -6,9 +6,8 @@ inhibit_all_warnings!
 
 use_frameworks!
 
-# JSON TOOL
-
-# UI/UX
+target 'LazyBone' do
 pod 'SnapKit', '~> 3.0.2'
+end
 
 
