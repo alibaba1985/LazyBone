@@ -8,6 +8,7 @@ use_frameworks!
 
 target 'LazyBone' do
 pod 'SnapKit', '~> 3.0.2'
+pod 'iCarousel', '~> 1.8.3'
 end
 
 

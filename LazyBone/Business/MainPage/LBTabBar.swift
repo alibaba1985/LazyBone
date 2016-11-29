@@ -41,7 +41,7 @@ class LBTabBar: UIView {
 			addSubview(item)
 		}
 		
-		let barHeight: CGFloat = 50.displayFrom1Scale()
+		let barHeight: CGFloat = 65.displayFrom1Scale()
 		let margin: CGFloat = 3.displayFrom1Scale()
 		let space: CGFloat = 12.32.displayFrom1Scale()
 		var previousView: LBTabBarItem!
@@ -144,6 +144,7 @@ class LBTabBarItem: UIButton {
 		setTitle(title, for: .normal)
 		setTitleColor(UIColor.white, for: .selected)
 		setTitleColor(color, for: .normal)
+        titleLabel?.font = UIFont.systemFont(ofSize: 14)
 	}
 	
 	required init?(coder aDecoder: NSCoder) {

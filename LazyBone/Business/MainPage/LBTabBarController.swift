@@ -37,7 +37,7 @@ class LBTabBarController: UITabBarController {
         view.addSubview(tabBar)
         tabBar.snp.makeConstraints { (make) in
             make.leading.bottom.trailing.equalTo(view)
-            make.height.equalTo(50.displayFrom1Scale())
+            make.height.equalTo(65.displayFrom1Scale())
         }
 	}
 }

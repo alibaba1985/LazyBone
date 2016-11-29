@@ -1,12 +1,15 @@
 PODS:
+  - iCarousel (1.8.3)
   - SnapKit (3.0.2)
 
 DEPENDENCIES:
+  - iCarousel (~> 1.8.3)
   - SnapKit (~> 3.0.2)
 
 SPEC CHECKSUMS:
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: 521ee72102c381dd04500ce9cfcd8fd1d5a49c50
+PODFILE CHECKSUM: 5829a1950f16c86f84075caab50f0f79bbf38347
 
 COCOAPODS: 1.1.1

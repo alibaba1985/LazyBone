@@ -85,6 +85,7 @@
 		81D21ACC1DEBE83F00609CFA /* AVOSCloudCrashReporting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 817030621DEBCBE00025347B /* AVOSCloudCrashReporting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FB555DEF1DED2C7A00DD213E /* LBTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB555DEE1DED2C7A00DD213E /* LBTabBar.swift */; };
 		FB555DF11DED33A200DD213E /* LBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB555DF01DED33A200DD213E /* LBTabBarController.swift */; };
+		FB61C6F21DED7F580086499F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB61C6F11DED7F580086499F /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -240,6 +241,7 @@
 		A71084FACD073DF02E97307F /* Pods-LazyBone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyBone.release.xcconfig"; path = "Pods/Target Support Files/Pods-LazyBone/Pods-LazyBone.release.xcconfig"; sourceTree = "<group>"; };
 		FB555DEE1DED2C7A00DD213E /* LBTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBTabBar.swift; sourceTree = "<group>"; };
 		FB555DF01DED33A200DD213E /* LBTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBTabBarController.swift; sourceTree = "<group>"; };
+		FB61C6F11DED7F580086499F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -620,6 +622,7 @@
 			children = (
 				FB555DEE1DED2C7A00DD213E /* LBTabBar.swift */,
 				FB555DF01DED33A200DD213E /* LBTabBarController.swift */,
+				FB61C6F11DED7F580086499F /* HomeViewController.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -761,6 +764,7 @@
 				817032161DEBCBE00025347B /* AFURLSessionManager.m in Sources */,
 				8170322C1DEBCBE00025347B /* FDStackViewDistributionLayoutArrangement.m in Sources */,
 				817032741DEBCBE00025347B /* ViewController.swift in Sources */,
+				FB61C6F21DED7F580086499F /* HomeViewController.swift in Sources */,
 				817032281DEBCBE00025347B /* FDGapLayoutGuide.m in Sources */,
 				817032571DEBCBE00025347B /* SDWebImageCompat.m in Sources */,
 				817032581DEBCBE00025347B /* SDWebImageDecoder.m in Sources */,
