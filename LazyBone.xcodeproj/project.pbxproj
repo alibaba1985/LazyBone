@@ -82,6 +82,8 @@
 		81D21ACA1DEBE83F00609CFA /* AVOSCloud.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 817030611DEBCBE00025347B /* AVOSCloud.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		81D21ACB1DEBE83F00609CFA /* AVOSCloudCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817030621DEBCBE00025347B /* AVOSCloudCrashReporting.framework */; };
 		81D21ACC1DEBE83F00609CFA /* AVOSCloudCrashReporting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 817030621DEBCBE00025347B /* AVOSCloudCrashReporting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FB555DEF1DED2C7A00DD213E /* LBTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB555DEE1DED2C7A00DD213E /* LBTabBar.swift */; };
+		FB555DF11DED33A200DD213E /* LBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB555DF01DED33A200DD213E /* LBTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -232,6 +234,8 @@
 		817033151DEBDB460025347B /* UIButton+Localize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Localize.swift"; sourceTree = "<group>"; };
 		817033161DEBDB460025347B /* UILabel+Localize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Localize.swift"; sourceTree = "<group>"; };
 		817033171DEBDB460025347B /* UITextField+Localize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Localize.swift"; sourceTree = "<group>"; };
+		FB555DEE1DED2C7A00DD213E /* LBTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBTabBar.swift; sourceTree = "<group>"; };
+		FB555DF01DED33A200DD213E /* LBTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,7 +281,7 @@
 				8170330E1DEBD4FA0025347B /* LazyBone.pch */,
 				81702FCF1DEBCBDF0025347B /* 3rdLibrary */,
 				817030F11DEBCBE00025347B /* Applications */,
-				817030F41DEBCBE00025347B /* Business */,
+				FB555DEB1DED2C6300DD213E /* Business */,
 				817030F71DEBCBE00025347B /* Common */,
 				817030FE1DEBCBE00025347B /* Helper */,
 				8170320D1DEBCBE00025347B /* Resource */,
@@ -495,29 +499,6 @@
 			path = Applications;
 			sourceTree = "<group>";
 		};
-		817030F41DEBCBE00025347B /* Business */ = {
-			isa = PBXGroup;
-			children = (
-				817030F51DEBCBE00025347B /* MainPage */,
-				817030F61DEBCBE00025347B /* Squat */,
-			);
-			path = Business;
-			sourceTree = "<group>";
-		};
-		817030F51DEBCBE00025347B /* MainPage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MainPage;
-			sourceTree = "<group>";
-		};
-		817030F61DEBCBE00025347B /* Squat */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Squat;
-			sourceTree = "<group>";
-		};
 		817030F71DEBCBE00025347B /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,6 +580,31 @@
 				817033171DEBDB460025347B /* UITextField+Localize.swift */,
 			);
 			path = Localize_Swift;
+			sourceTree = "<group>";
+		};
+		FB555DEB1DED2C6300DD213E /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				FB555DEC1DED2C6300DD213E /* MainPage */,
+				FB555DED1DED2C6300DD213E /* Squat */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		FB555DEC1DED2C6300DD213E /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				FB555DEE1DED2C7A00DD213E /* LBTabBar.swift */,
+				FB555DF01DED33A200DD213E /* LBTabBarController.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		FB555DED1DED2C6300DD213E /* Squat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Squat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -690,6 +696,7 @@
 				817032551DEBCBE00025347B /* NSData+ImageContentType.m in Sources */,
 				817033111DEBD6CA0025347B /* AITools.m in Sources */,
 				817032731DEBCBE00025347B /* AppDelegate.swift in Sources */,
+				FB555DEF1DED2C7A00DD213E /* LBTabBar.swift in Sources */,
 				817032751DEBCBE00025347B /* AILine.swift in Sources */,
 				817032101DEBCBE00025347B /* AFHTTPSessionManager.m in Sources */,
 				817032631DEBCBE00025347B /* UIView+WebCacheOperation.m in Sources */,
@@ -717,6 +724,7 @@
 				8170322E1DEBCBE00025347B /* FDStackViewLayoutArrangement.m in Sources */,
 				817032391DEBCBE00025347B /* JSONModel+networking.m in Sources */,
 				817032351DEBCBE00025347B /* JSONModelClassProperty.m in Sources */,
+				FB555DF11DED33A200DD213E /* LBTabBarController.swift in Sources */,
 				817032621DEBCBE00025347B /* UIImageView+WebCache.m in Sources */,
 				817032111DEBCBE00025347B /* AFNetworkReachabilityManager.m in Sources */,
 				817033051DEBCBE00025347B /* UploadFileUtils.swift in Sources */,
