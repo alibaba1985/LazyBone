@@ -124,11 +124,11 @@ class LBTabBarItem: UIButton {
 	func setup() {
 		selectedView = UIView()
 		selectedView.backgroundColor = color
-        selectedView.layer.cornerRadius = 6.displayFrom1Scale()
+        selectedView.layer.cornerRadius = 3.displayFrom1Scale()
         insertSubview(selectedView, at: 0)
         normalView = UIView()
         normalView.backgroundColor = color
-        normalView.layer.cornerRadius = 6.displayFrom1Scale()
+        normalView.layer.cornerRadius = 3.displayFrom1Scale()
         insertSubview(normalView, at: 0)
         
         selectedView.snp.makeConstraints { (make) in
